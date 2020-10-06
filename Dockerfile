@@ -1,5 +1,5 @@
 FROM gcc:10
-WORKDIR /app/
+WORKDIR /
 COPY ./* ./
 RUN g++ test.cpp -o lexical
 RUN chmod +x lexical
