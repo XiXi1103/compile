@@ -12,11 +12,11 @@ int legal(char c){
 	if(isLetter(c)||c=='+'||c=='*'||c==','||c=='('||c==')'||c==':')return 1;
 	return 0;
 }
-int main(char *argv[]){
+int main(int argc,char *argv[]){
 	char s[1000],d[50];
 	int flag=0; 
 	FILE * fp;
-    fp = fopen (argv[0], "r");
+    fp = fopen (argv[1], "r");
 	while(fscanf(fp,"%s",s)!=EOF){
 		for(int i=0;s[i]!='\0';){
 			flag=0;
