@@ -84,7 +84,7 @@ int main(int argc,char *argv[]){
 				flag=1;
 			}
 			if(s[i]==':'){
-				if(s[i+1]==':'){
+				if(s[i+1]=='='){
 					printf("Assign\n");
 					i+=2;
 				}
