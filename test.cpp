@@ -9,7 +9,7 @@ int isLetter(char c){
 	return 0;
 }
 int legal(char c){
-	if(isLetter(c)||c=='+'||c=='*'||c==','||c=='('||c==')'||c==':')return 1;
+	if(isLetter(c)||c=='+'||c=='*'||c==','||c=='('||c==')'||c==':'||c=='\0')return 1;
 	return 0;
 }
 int main(int argc,char *argv[]){
