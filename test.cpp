@@ -109,7 +109,10 @@ int main(int argc,char *argv[]){
 				printf("Ident(%s)\n",ss);
 				flag=1;
 			}
-			if(flag==0) return 0;
+			if(flag==0) {
+			printf("Unknown\n");	
+			return 0;	
+			}
 		}
 	}
 } 
